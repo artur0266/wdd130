@@ -5,10 +5,18 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #023e8a;
+    --secondary-color: #0077b6;
+    --accent-color: #ffb703;
+    --background-color: #ffffff;
+    --text-color: #333333;
+}
+
 body {
     font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #fff;
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 /* Cabeçalho */
@@ -39,7 +47,7 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #0077b6;
+    color: var(--secondary-color);
 }
 
 /* Conteúdo principal */
@@ -58,23 +66,41 @@ h2 {
 /* Sessão principal */
 .hero {
     position: relative;
-    border: 1px solid #999;
-    padding: 20px;
     margin-bottom: 20px;
 }
 
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 15px;
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .hero article {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 20px;
-    border: 1px solid #ccc;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 15px;
 }
 
 .hero article img {
+    float: right;
     width: 150px;
     height: auto;
+    margin-left: 15px;
+    margin-bottom: 10px;
 }
 
 .hero article p {
@@ -132,12 +158,16 @@ footer {
     border: 1px solid #999;
 }
 
-.sociallinks {
+.redes-sociais {
     display: flex;
     gap: 15px;
 }
 
-.sociallinks img {
+.redes-sociais a {
+    text-decoration: none;
+}
+
+.redes-sociais img {
     width: 40px;
     height: 40px;
 }
