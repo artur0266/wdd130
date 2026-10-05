@@ -1,0 +1,95 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Caixa Principal do Formulário */
+form {
+    background-color: #dbdbdb;
+    border: 1px solid #b5b5b5;
+    padding: 25px;
+    width: 100%;
+    max-width: 550px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Grupos de Campos */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Rótulos em Negrito e Itálico */
+label {
+    font-weight: bold;
+    font-style: italic;
+    color: #000000;
+    font-size: 0.95rem;
+}
+
+/* Campos de Entrada Uniformes */
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #adadad;
+    border-radius: 3px;
+    background-color: #ffffff;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Bloco de Código da Questão 4 */
+.code-block {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin: 4px 0;
+    border-radius: 2px;
+}
+
+/* Botão de Envio Estilizado */
+button[type="submit"] {
+    background-color: #3f4bb5;
+    color: #ffffff;
+    border: 1px solid #2e378c;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease;
+    margin-top: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #2f3994;
+}
