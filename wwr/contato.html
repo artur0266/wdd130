@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Entre em contato com a França Rafting para tirar dúvidas, consultar reservas e conhecer nossos serviços.">
+    <meta name="author" content="Artur Cesar de França">
+    <title>Fale Conosco | França Rafting</title>
+    <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Logo da empresa de rafting">
+
+        <nav>
+            <a href="index.html">Página Inicial</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="passeios.html">Passeios</a>
+            <a href="contato.html">Fale Conosco</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Informações de contato centralizadas no topo -->
+        <section class="contact-info">
+            <h2>Companhia de Rafting em Corredeiras</h2>
+            <p>123 Rua Principal do Rio</p>
+            <p>Foz do Iguaçu, Paraná</p>
+            <p>+55 21 99999-9999</p>
+            <p>info@correiras.com</p>
+        </section>
+
+        <!-- Secção que agrupa o Mapa e o Formulário lado a lado -->
+        <section class="contact-form">
+            <iframe
+              src="https://maps.google.com/maps?q=Rio%20de%20Janeiro%20RJ&t=&z=12&ie=UTF8&iwloc=&output=embed"
+              title="Mapa da localização da França Rafting" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <form action="#" method="post">
+                <div class="form-item">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite aqui" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite aqui" required>
+                </div>
+
+                <fieldset>
+                    <legend>Qual é o motivo do seu contato?</legend>
+
+                    <label>
+                        <input type="radio" name="motivo" value="consulta-geral" checked required>
+                        Dúvida Geral
+                    </label>
+
+                    <label>
+                        <input type="radio" name="motivo" value="pergunta-reserva">
+                        Pergunta sobre Reserva
+                    </label>
+
+                    <label>
+                        <input type="radio" name="motivo" value="sugestao-site">
+                        Sugestão
+                    </label>
+                </fieldset>
+
+                <div class="form-item">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite aqui"
+                      required></textarea>
+                </div>
+
+                <div class="newsletter">
+                    <label>
+                        <input type="checkbox" name="newsletter" value="sim">
+                        Por favor, me inscreva na newsletter mensal
+                    </label>
+                </div>
+
+                <button type="submit">Entrar em Contato!</button>
+            </form>
+        </section>
+
+        <!-- Quadro da Equipa -->
+        <section class="employees">
+            <h2>Estamos Aqui para Serví-lo</h2>
+
+            <div class="employee-list">
+                <figure>
+                    <img src="imagens/funcionario1.jpg" alt="Instrutor de rafting da equipe">
+                    <figcaption>Lucas </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="imagens/funcionario2.jpg" alt="Guia de aventuras da equipe">
+                    <figcaption>Maria</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="imagens/funcionario3.jpg"
+                      alt="Responsável pelo atendimento ao cliente">
+                    <figcaption>João</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 França Rafting | Artur Cesar de França </p>
+
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="imagens/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com">
+                <img src="imagens/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://youtube.com">
+                <img src="imagens/youtube.png" alt="YouTube">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
