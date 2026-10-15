@@ -441,3 +441,220 @@ footer {
     padding: 2px;
     object-fit: contain;
 }
+
+/* Página inicial */
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgba(2, 62, 138, 0.85);
+    color: #ffffff;
+    text-align: center;
+}
+
+.newsletter {
+    max-width: 700px;
+    margin: 35px auto;
+    padding: 25px;
+    text-align: center;
+    background-color: #f1f5f9;
+    border-radius: 10px;
+}
+
+.newsletter form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: left;
+}
+
+.newsletter input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #666666;
+    border-radius: 5px;
+}
+
+.newsletter button,
+.cta {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #023e8a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter button:hover,
+.cta:hover {
+    background-color: #0077b6;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.home-intro {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 25px;
+}
+
+.home-card {
+    padding: 15px;
+    background-color: #f1f5f9;
+    border-radius: 10px;
+}
+
+.home-card img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 600px) {
+    .hero > img {
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 1.4rem;
+    }
+
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+```css
+/* Página de passeios */
+
+.trips-hero {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #023e8a;
+    color: #ffffff;
+}
+
+.trips-hero p {
+    margin-bottom: 25px;
+}
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.trip-card {
+    overflow: hidden;
+    padding: 15px;
+    background-color: #f1f5f9;
+    border-radius: 10px;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.trip-card h2 {
+    color: #023e8a;
+}
+
+.trips-table {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.trips-table h2 {
+    text-align: center;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trips-table th,
+.trips-table td {
+    padding: 14px;
+    border: 1px solid #cccccc;
+    text-align: left;
+}
+
+.trips-table th {
+    background-color: #023e8a;
+    color: #ffffff;
+}
+
+.trips-table tbody tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+.trips-contact {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffb703;
+    color: #222222;
+}
+
+@media screen and (max-width: 800px) {
+    .trips-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .trips-grid {
+        grid-template-columns: 1fr;
+    }
+}
